@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.dup2.supermarketloser" version="0.1.2.0" versionCode="100" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+    <name>SupermarketLoser</name>
+    <description>
+        Fast and convenient way to calculate and compare unit price in supermarket.
+        Inputting sum price and quantity of multiple goods, you get their unit price and which is cheaper.
+    </description>
+    <author href="http://www.dup2.org">
+         Yingtao Qiu
+    </author>
+    <preference name="phonegap-version" value="2.9.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="handset" />
+    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="permissions" value="none" />
+    <icon gap:density="ldpi" gap:platform="android" src="res/icons/android/icon-36-ldpi.png" />
+    <icon gap:density="mdpi" gap:platform="android" src="res/icons/android/icon-48-mdpi.png" />
+    <icon gap:density="hdpi" gap:platform="android" src="res/icons/android/icon-72-hdpi.png" />
+    <icon gap:density="xhdpi" gap:platform="android" src="res/icons/android/icon-96-xhdpi.png" />
+    <icon gap:platform="ios" height="57" src="res/icons/ios/icon-57.png" width="57" />
+    <icon gap:platform="ios" height="114" src="res/icons/ios/icon-57-2x.png" width="114" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="res/screens/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="res/screens/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="res/screens/android/screen-hdpi-portrait.png" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="res/screens/android/screen-xhdpi-portrait.png" />
+    <gap:splash gap:platform="ios" height="480" src="res/screens/ios/screen-iphone-portrait.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+</widget>

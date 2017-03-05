@@ -1,0 +1,30 @@
+<div data-options="dxView : { name: 'home' }">
+    <div data-options="dxContent : { targetPlaceholder: 'content' }">
+        <div data-bind="dxToolbar: { items: [{ location: 'center', text: '@supermarketLoser' }] }"></div>
+        <div data-bind="dxScrollView: { }" class="main-content">
+            <div class="dx-fieldset top-fieldset">            
+                <div class="dx-field">
+                    <div class="dx-field-label">@1 @sumPrice</div>
+                    <div id="sumPrice1Input" class="dx-field-value" data-bind="dxNumberBox: { value: sumPrice1, placeholder: '@typeHere...', valueUpdateEvent: 'input keyup' }"></div>
+                    <div class="dx-field-label">@1 @quantity</div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: quantity1, placeholder: '@typeHere...', valueUpdateEvent: 'input keyup' }"></div>
+                    <span class="dx-field-label">@1 @unitPrice</span>
+                    <span class="dx-field-value" data-bind="text: Globalize.format(unitPrice1(), 'c')"></span>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">@2 @sumPrice</div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: sumPrice2, placeholder: '@typeHere...', valueUpdateEvent: 'input keyup' }"></div>
+                    <div class="dx-field-label">@2 @quantity</div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: quantity2, placeholder: '@typeHere...', valueUpdateEvent: 'input keyup' }"></div>
+                    <span class="dx-field-label">@2 @unitPrice</span>
+                    <span class="dx-field-value" data-bind="text: Globalize.format(unitPrice2(), 'c')"></span>
+                </div>
+                <div class="dx-field">
+                    <span class="dx-field-label">@compareResult</span>
+                    <span class="dx-field-value" style="color: red" data-bind="text: compareResult()"></span>
+                    <!--<span class="dx-field-value" style="font-weight: bold; color: red" data-bind="text: compareResult()"></span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
